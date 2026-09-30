@@ -3,182 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tappezzeria Artigianale e Rivestimenti su Misura a Roma | Piattelli</title>
-  <meta name="description" content="Rivestimento divani, poltrone, sedie e confezione tendaggi su misura a Roma. Laboratorio sartoriale a Via Tozzi 21 e atelier in Lungotevere Marzio 10. Preventivo e sopralluogo gratuiti.">
-  
-  <style>
-    :root {
-      --primary: #0F2042;       /* Blu Notte Piattelli */
-      --accent: #722F37;        /* Bordeaux Tappezzeria */
-      --bg-light: #F8F9FA;
-      --text: #2C3E50;
-      --white: #FFFFFF;
-    }
+  <title>Tappezzeria Piattelli Roma - Rivestimento Divani, Poltrone e Sartoria</title>
+  <meta name="description" content="Tappezzeria artigianale a Roma. Restauro e rivestimento divani, poltrone, testate letto e confezione tendaggi. Laboratorio in Via Federico Tozzi 21 e Showroom in Lungotevere Marzio 10.">
 
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-    body { color: var(--text); background-color: var(--white); line-height: 1.6; }
+  <!-- META TAG OPEN GRAPH PER ANTEPRIMA WHATSAPP / SOCIAL -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tappezzeria Artigianale e Rivestimenti su Misura a Roma | Piattelli">
+  <meta property="og:description" content="Rinnoviamo divani, poltrone e tendaggi d'arredo nei nostri laboratori. Richiedi una stima o invia la foto del tuo mobile su WhatsApp.">
+  <meta property="og:url" content="https://magopaolo-blip.github.io/tappezzeriapiattelli/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&h=630&q=80">
 
-    /* Header */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-    .logo img { height: 85px; width: auto; display: block; }
-
-    /* Hero Section */
-    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; padding: 50px 5%; background: var(--bg-light); align-items: center; }
-    .hero-text h1 { font-size: 2.4rem; color: var(--primary); margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
-    .hero-text p { font-size: 1.15rem; margin-bottom: 20px; color: #4A5568; }
-    .hero-img { width: 100%; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-
-    /* Form Card */
-    .form-card { background: var(--white); padding: 32px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.08); border-top: 5px solid var(--accent); }
-    .form-card h3 { color: var(--primary); margin-bottom: 15px; font-size: 1.4rem; font-weight: 700; }
-    .form-group { margin-bottom: 15px; }
-    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px 15px; border: 1px solid #CBD5E0; border-radius: 6px; font-size: 1rem; outline: none; }
-    .form-group input:focus, .form-group textarea:focus { border-color: var(--accent); }
-    .btn-submit { width: 100%; background: var(--accent); color: var(--white); border: none; padding: 15px; font-size: 1.1rem; font-weight: bold; border-radius: 6px; cursor: pointer; transition: 0.3s; }
-    .btn-submit:hover { opacity: 0.92; }
-
-    /* Features */
-    .features { padding: 60px 5%; text-align: center; }
-    .features h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; }
-    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; }
-    .feature-item { padding: 30px 20px; background: var(--bg-light); border-radius: 8px; border-left: 4px solid var(--accent); text-align: left; }
-    .feature-item h4 { color: var(--primary); margin-bottom: 10px; font-size: 1.2rem; }
-
-    /* Sezione Sedi */
-    .stores-section { padding: 50px 5%; background: var(--white); text-align: center; border-top: 1px solid #E2E8F0; }
-    .stores-section h2 { color: var(--primary); font-size: 1.8rem; margin-bottom: 30px; font-weight: 800; }
-    .stores-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; text-align: left; max-width: 1100px; margin: 0 auto; }
-    .store-card { background: var(--bg-light); border-radius: 10px; padding: 25px; border: 1px solid #E2E8F0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-    .store-card h3 { color: var(--primary); font-size: 1.3rem; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-    .store-tag { display: inline-block; background: var(--primary); color: var(--white); font-size: 0.75rem; padding: 3px 8px; border-radius: 4px; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; }
-    .store-card p { font-size: 0.95rem; color: #4A5568; margin-bottom: 10px; }
-    .store-card ul { list-style: none; padding: 0; margin-top: 10px; font-size: 0.9rem; color: #2D3748; }
-    .store-card ul li { margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-
-    /* Floating WhatsApp Button */
-    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 14px 22px; border-radius: 50px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.25); z-index: 9999; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
-
-    /* Responsive */
-    @media (max-width: 850px) {
-      header { padding: 15px 5%; }
-      .logo img { height: 60px; }
-      .hero { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
-      .hero-text h1 { font-size: 1.8rem; }
-      .feature-item { text-align: center; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="logo-tappezzeria.svg" alt="Piattelli Tappezzeria">
-    </div>
-    <div>
-      <a href="https://wa.me/393737502033" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; font-size: 1.1rem;">💬 373 750 2033</a>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo-box">
+        <img src="logo-tappezzeria.svg" alt="Piattelli Tappezzeria & Sartoria" class="logo-img">
+      </div>
+      <div class="header-contact">
+        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20inviare%20la%20foto%20di%20un%20mobile%20per%20avere%20un%20preventivo." target="_blank" class="phone-link">
+          💬 373 750 2033
+        </a>
+      </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- HERO SECTION CON FORM A DESTRA -->
   <section class="hero">
-    <div class="hero-text">
-      <h1>Tappezzeria Artigianale e Rivestimenti su Misura a Roma</h1>
-      <p>Rinnoviamo divani, poltrone, sedie e confezioniamo tendaggi d'arredo nei nostri laboratori. Restauro sartoriale a Via Tozzi e atelier in Lungotevere Marzio.</p>
+    <div class="container hero-container">
       
-      <!-- Grafica Vettoriale Tappezzeria -->
-      <svg class="hero-img" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="#0F2042"/>
-        <path d="M0 0 L800 0 L800 450 L0 450 Z" fill="#1E1B18"/>
-        <path d="M250 380 L550 380 C580 380, 600 360, 600 330 L580 220 C580 180, 550 150, 500 150 L300 150 C250 150, 220 180, 220 220 L200 330 C200 360, 220 380, 250 380 Z" fill="#722F37" opacity="0.85"/>
-        <path d="M280 220 L520 220 C540 220, 550 230, 550 250 L540 330 L260 330 L250 250 C250 230, 260 220, 280 220 Z" fill="#8B3A44" opacity="0.9"/>
-        <circle cx="340" cy="250" r="4" fill="#3D181D"/>
-        <circle cx="400" cy="250" r="4" fill="#3D181D"/>
-        <circle cx="460" cy="250" r="4" fill="#3D181D"/>
-        <circle cx="370" cy="280" r="4" fill="#3D181D"/>
-        <circle cx="430" cy="280" r="4" fill="#3D181D"/>
-        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="30" font-weight="bold">RIVESTIMENTO DIVANI & POLTRONE</text>
-        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" fill="#E28B95" font-family="sans-serif" font-size="18" font-weight="600">Restauro Artigianale • Tessuti Antimacchia • Preventivo Foto</text>
-      </svg>
-    </div>
-
-    <!-- Form Lead -->
-    <div class="form-card">
-      <h3>Richiedi Preventivo / Sopralluogo</h3>
-      <form action="https://formspree.io/f/TUO_ID_FORMSPREE" method="POST">
-        <div class="form-group">
-          <input type="text" name="nome" placeholder="Il tuo Nome" required>
+      <!-- COLONNA SINISTRA -->
+      <div class="hero-left">
+        <h1>Tappezzeria Artigianale e Rivestimenti su Misura a Roma</h1>
+        <p class="hero-sub">Rinnoviamo divani, poltrone, sedie e confezioniamo tendaggi d'arredo nei nostri laboratori. Restauro sartoriale a Via Tozzi e atelier in Lungotevere Marzio.</p>
+        
+        <div class="hero-banner-card">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Restauro e Rivestimento Divani Piattelli">
+          <div class="banner-overlay-text">
+            <h3>RIVESTIMENTO DIVANI & POLTRONE</h3>
+            <p>Restauro Artigianale • Tessuti Antimacchia • Preventivo con Foto</p>
+          </div>
         </div>
-        <div class="form-group">
-          <input type="tel" name="telefono" placeholder="Numero di Telefono" required>
+      </div>
+
+      <!-- COLONNA DESTRA (FORM RISALTATO) -->
+      <div class="hero-right">
+        <div class="form-card">
+          <h3>Richiedi Preventivo / Sopralluogo</h3>
+          <form class="lead-form">
+            <div class="form-group">
+              <input type="text" placeholder="Il tuo Nome" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="Numero di Telefono" required>
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Cosa desideri realizzare?</option>
+                <option value="rivestimento-divano">Rivestimento / Restauro Divano</option>
+                <option value="poltrona-sedie">Poltrone e Sedie d'Epoca o Moderne</option>
+                <option value="testata-letto">Testata Letto su Misura</option>
+                <option value="tendaggi-arredo">Tendaggi e Tessuti d'Arredo</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-burgundy btn-block">Invia la Richiesta</button>
+          </form>
         </div>
-        <div class="form-group">
-          <select name="servizio" required>
-            <option value="" disabled selected>Cosa desideri realizzare?</option>
-            <option value="Divani/Poltrone">Rivestimento Divano / Poltrona</option>
-            <option value="Tendaggi">Tendaggi e Tende da Interno</option>
-            <option value="Sedie/Letti">Testate Letto / Sedie</option>
-            <option value="Altro">Altra lavorazione sartoriale</option>
-          </select>
-        </div>
-        <button type="submit" class="btn-submit">Invia la Richiesta</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Features -->
-  <section class="features">
-    <h2>La tradizione sartoriale della Tappezzeria Piattelli</h2>
-    <div class="features-grid">
-      <div class="feature-item">
-        <h4>Sartoria e Restauro Interno</h4>
-        <p>Ogni divano o poltrona viene lavorato a mano dai nostri maestri tappezzieri nel laboratorio di Via Tozzi.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Ampio Catalogo Tessuti</h4>
-        <p>Vasta scelta di tessuti antimacchia, pelli, velluti e filati d'arredo visionabili in entrambe le sedi.</p>
-      </div>
-      <div class="feature-item">
-        <h4>Ritiro e Consegna a Domicilio</h4>
-        <p>Ci occupiamo del ritiro del mobile direttamente a casa tua in tutta Roma e della riconsegna a lavoro finito.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sezione Sedi Roma -->
-  <section class="stores-section">
-    <h2>Le Nostre Sedi a Roma</h2>
-    <div class="stores-grid">
-      
-      <div class="store-card">
-        <span class="store-tag" style="background: var(--accent);">Grande Laboratorio & Sartoria</span>
-        <h3>📍 Via Federico Tozzi, 21</h3>
-        <p><strong>Laboratorio Artigianale e Confezione</strong></p>
-        <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono il restauro e il rivestimento di divani, poltrone e tendaggi.</p>
-        <ul>
-          <li>✂️ Laboratorio di sartoria e imbottiture</li>
-          <li>🛋️ Ritiro e lavorazione diretta mobili</li>
-          <li>🅿️ Facile accesso e parcheggio</li>
-        </ul>
-      </div>
-
-      <div class="store-card">
-        <span class="store-tag">Atelier Centro Storico</span>
-        <h3>📍 Lungotevere Marzio, 10</h3>
-        <p><strong>Showroom di Rappresentanza</strong></p>
-        <p>Atelier al centro di Roma ideale per consulenze d'arredo riservate, progettazione tendaggi e selezione tessuti d'alta gamma.</p>
-        <ul>
-          <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
-          <li>🎨 Consultazione campionari esclusivi</li>
-          <li>🤝 Appuntamenti dedicati con clienti e architetti</li>
-        </ul>
       </div>
 
     </div>
   </section>
 
-  <!-- Tasto WhatsApp Fluttuante -->
-  <a href="https://wa.me/393737502033?text=Salve,%20ho%20visto%20la%20pagina%20Tappezzeria%20e%20vorrei%20un%20preventivo%20inviandovi%20una%20foto." class="whatsapp-btn" target="_blank">
+  <!-- VANTAGGI -->
+  <section class="section section-advantages">
+    <div class="container">
+      <h2 class="section-heading center">La tradizione sartoriale della Tappezzeria Piattelli</h2>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <h4>Sartoria e Restauro Interno</h4>
+          <p>Ogni divano o poltrona viene lavorato a mano dai nostri maestri tappezzieri nel laboratorio di Via Tozzi.</p>
+        </div>
+        <div class="advantage-card">
+          <h4>Ampio Catalogo Tessuti</h4>
+          <p>Vasta scelta di tessuti antimacchia, pelli, velluti e filati d'arredo visionabili in entrambe le sedi.</p>
+        </div>
+        <div class="advantage-card">
+          <h4>Ritiro e Consegna a Domicilio</h4>
+          <p>Ci occupiamo del ritiro del mobile direttamente a casa tua in tutta Roma e della riconsegna a lavoro finito.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERIA REALIZZAZIONI -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading center">Lavorazioni e Restauri Artigianali</h2>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=600&q=80" alt="Restauro Divani">
+          <div class="gallery-title">Restauro & Rivestimento Divani</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=600&q=80" alt="Poltrone e Sedie">
+          <div class="gallery-title">Poltrone Classiche e Moderne</div>
+        </div>
+        <div class="gallery-card">
+          <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=600&q=80" alt="Testate Letto e Imbottiti">
+          <div class="gallery-title">Testate Letto & Imbottiti</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-heading center">Opinioni dei nostri clienti</h2>
+      <div class="reviews-grid">
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Hanno rinfoderato il divano di famiglia a cui tenevamo moltissimo. Lavoro di sartoria eccellente, sembra nuovo di zecca!"</p>
+          <span><strong>Paola G.</strong> — Roma Prati</span>
+        </div>
+        <div class="review-box">
+          <div class="stars">★★★★★</div>
+          <p>"Inviato la foto su WhatsApp e ricevuto subito una stima precisa. Servizio di ritiro e consegna impeccabile."</p>
+          <span><strong>Claudio B.</strong> — Roma Centro</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEDI ESATTE -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading center">Le Nostre Sedi a Roma</h2>
+      <div class="locations-grid">
+        
+        <!-- LABORATORIO VIA FEDERICO TOZZI 21 -->
+        <div class="location-box highlight">
+          <span class="loc-badge">Grande Laboratorio & Sartoria</span>
+          <h3>Via Federico Tozzi, 21</h3>
+          <p class="loc-sub">📍 Laboratorio Artigianale e Confezione</p>
+          <p>La sede operativa principale dove i nostri tappezzieri e sartine eseguono il restauro e il rivestimento di divani, poltrone e tendaggi.</p>
+          <ul>
+            <li>✂️️ Laboratorio di sartoria e imbottiture su misura</li>
+            <li>🛋️ Ritiro e lavorazione diretta mobili</li>
+            <li>🅿️ Facile accesso e parcheggio riservato</li>
+          </ul>
+        </div>
+
+        <!-- SHOWROOM LUNGOTEVERE MARZIO 10 -->
+        <div class="location-box">
+          <span class="loc-badge dark">Atelier Centro Storico</span>
+          <h3>Lungotevere Marzio, 10</h3>
+          <p class="loc-sub">📍 Showroom di Rappresentanza</p>
+          <p>Atelier al centro di Roma ideale per consulenze d'arredo riservate, progettazione tendaggi e selezione tessuti d'alta gamma.</p>
+          <ul>
+            <li>🏛️ Posizione centrale (Zona Prati / Centro)</li>
+            <li>🎨 Consultazione campionari esclusivi</li>
+            <li>🤝 Appuntamenti dedicati con clienti e architetti</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container center">
+      <p><strong>Piattelli Tappezzeria & Sartoria</strong></p>
+      <p>Laboratorio: Via Federico Tozzi, 21 - Roma | Showroom: Lungotevere Marzio, 10 - Roma</p>
+      <p class="copy">&copy; Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- BOTTONE WHATSAPP FLUTTUANTE -->
+  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20inviare%20una%20foto%20per%20un%20preventivo." class="whatsapp-sticky" target="_blank">
     💬 Invia Foto su WhatsApp
   </a>
 
