@@ -1,1 +1,385 @@
+:root {
+  --burgundy-primary: #722f37;
+  --burgundy-hover: #5a232a;
+  --burgundy-dark: #1f1113;
+  --green-whatsapp: #25d366;
+  --bg-section: #f9f8f6;
+  --text-main: #2c2c2c;
+  --text-muted: #666666;
+  --border-color: #e5e0db;
+  --font: 'Montserrat', sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text-main);
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.center {
+  text-align: center;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.bg-light {
+  background-color: var(--bg-section);
+}
+
+.section-heading {
+  font-size: 1.8rem;
+  color: var(--burgundy-primary);
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+/* HEADER */
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border-color);
+  background: #fff;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  height: 65px;
+  width: auto;
+  display: block;
+}
+
+.phone-link {
+  font-weight: 700;
+  color: var(--burgundy-primary);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 35px 0;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.hero-left h1 {
+  font-size: 2.2rem;
+  color: var(--burgundy-primary);
+  line-height: 1.2;
+  margin-bottom: 12px;
+  font-weight: 800;
+}
+
+.hero-sub {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.hero-banner-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero-banner-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(114, 47, 55, 0.92);
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+}
+
+.banner-overlay-text h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.banner-overlay-text p {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+/* FORM CARD BURGUNDY */
+.form-card {
+  background: #ffffff;
+  border: 2px solid var(--burgundy-primary);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(114, 47, 55, 0.12);
+}
+
+.form-card h3 {
+  font-size: 1.2rem;
+  color: var(--burgundy-primary);
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  background: #fff;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.btn-burgundy {
+  background-color: var(--burgundy-primary);
+  color: #ffffff;
+}
+
+.btn-burgundy:hover {
+  background-color: var(--burgundy-hover);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* VANTAGGI */
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.advantage-card {
+  background: #ffffff;
+  border-left: 4px solid var(--burgundy-primary);
+  padding: 20px;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.advantage-card h4 {
+  color: var(--burgundy-primary);
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.advantage-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* GALLERIA */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-title {
+  padding: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--burgundy-primary);
+  text-align: center;
+}
+
+/* RECENSIONI */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.review-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.stars {
+  color: #f1c40f;
+  margin-bottom: 8px;
+}
+
+.review-box p {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.review-box span {
+  font-size: 0.85rem;
+  color: var(--burgundy-primary);
+}
+
+/* SEDI */
+.locations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.location-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.location-box.highlight {
+  border-top: 4px solid var(--burgundy-primary);
+}
+
+.loc-badge {
+  display: inline-block;
+  background: var(--burgundy-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.loc-badge.dark {
+  background: #333;
+}
+
+.location-box h3 {
+  font-size: 1.3rem;
+  color: var(--burgundy-primary);
+  margin-bottom: 4px;
+}
+
+.loc-sub {
+  font-weight: 600;
+  color: var(--burgundy-primary);
+  font-size: 0.88rem;
+  margin-bottom: 10px;
+}
+
+.location-box ul {
+  margin-top: 12px;
+  list-style: none;
+}
+
+.location-box li {
+  font-size: 0.88rem;
+  margin-bottom: 6px;
+}
+
+/* BOTTONE WHATSAPP FLUTTUANTE */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--green-whatsapp);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+  font-size: 0.9rem;
+}
+
+.whatsapp-sticky:hover {
+  background-color: #1ebd56;
+}
+
+/* FOOTER */
+.footer {
+  background: var(--burgundy-dark);
+  color: #ffffff;
+  padding: 25px 0;
+  font-size: 0.88rem;
+}
+
+.footer p {
+  margin-bottom: 4px;
+}
+
+.copy {
+  opacity: 0.7;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero-container,
+  .advantages-grid,
+  .gallery-grid,
+  .locations-grid,
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
