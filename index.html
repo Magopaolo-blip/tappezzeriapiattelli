@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tappezzeria Artigianale e Tendaggi a Roma | Piattelli</title>
-  <meta name="description" content="Rivestimento divani, poltrone, sedie e confezione tendaggi su misura a Roma. Laboratorio artigianale a Lungotevere e Via Tozzi. Preventivo e sopralluogo gratuiti.">
+  <title>Tappezzeria Artigianale e Rivestimento Divani a Roma | Piattelli</title>
+  <meta name="description" content="Tappezzeria artigianale a Roma: rivestimento divani, poltrone, sedie e testate letto. Rinnova i tuoi imbottiti con tessuti di pregio da Piattelli.">
   
   <style>
     :root {
       --primary: #0F2042;       /* Blu Notte Piattelli */
-      --accent: #722F37;        /* Bordeaux Tappezzeria */
+      --accent: #D97706;        /* Ambra Artigianale */
       --bg-light: #F8F9FA;
       --text: #2C3E50;
       --white: #FFFFFF;
@@ -18,15 +18,15 @@
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
     body { color: var(--text); background-color: var(--white); line-height: 1.6; }
 
-    /* Header */
-    header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
-    .logo img { height: 48px; width: auto; display: block; }
+    /* Header e Logo fortemente evidenziati */
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
+    .logo img { height: 85px; width: auto; display: block; }
 
     /* Hero Section */
     .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; padding: 50px 5%; background: var(--bg-light); align-items: center; }
     .hero-text h1 { font-size: 2.4rem; color: var(--primary); margin-bottom: 15px; font-weight: 800; line-height: 1.2; }
     .hero-text p { font-size: 1.15rem; margin-bottom: 20px; color: #4A5568; }
-    .hero-img { width: 100%; height: 320px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .hero-img { width: 100%; height: 350px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
 
     /* Form Card */
     .form-card { background: var(--white); padding: 32px; border-radius: 12px; box-shadow: 0 4px 25px rgba(0,0,0,0.08); border-top: 5px solid var(--accent); }
@@ -49,6 +49,8 @@
 
     /* Responsive */
     @media (max-width: 850px) {
+      header { padding: 15px 5%; }
+      .logo img { height: 60px; }
       .hero { grid-template-columns: 1fr; text-align: center; padding: 30px 5%; }
       .hero-text h1 { font-size: 1.8rem; }
       .feature-item { text-align: center; }
@@ -63,21 +65,38 @@
       <img src="logo-tappezzeria.svg" alt="Piattelli Tappezzeria">
     </div>
     <div>
-      <a href="tel:+390600000000" style="color: var(--primary); font-weight: bold; text-decoration: none; font-size: 1.1rem;">📞 06 XXXXXXX</a>
+      <a href="https://wa.me/393737502033" target="_blank" style="color: var(--primary); font-weight: bold; text-decoration: none; font-size: 1.1rem;">💬 373 750 2033</a>
     </div>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h1>Tappezzeria Artigianale e Rivestimenti su Misura a Roma</h1>
-      <p>Rinnoviamo divani, poltrone, sedie e confezioniamo tendaggi d'arredo nel nostro laboratorio storico. Restauro sartoriale e materiali di alta qualità.</p>
-      <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80" alt="Poltrona e rivestimenti d'arredo" class="hero-img">
+      <h1>Tappezzeria Artigianale e Imbottiti a Roma</h1>
+      <p>Rifoderiamo e restauriamo divani, poltrone, sedie e testate letto. Dai nuova vita ai tuoi mobili con tessuti pregiati, antimacchia ed ecopelli dei migliori marchi.</p>
+      
+      <!-- Grafica vettoriale Tappezzeria -->
+      <svg class="hero-img" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="#0F2042"/>
+        <path d="M0 0 L800 0 L800 450 L0 450 Z" fill="#1E1B18"/>
+        <!-- Silhouette Poltrona Artigianale -->
+        <path d="M250 380 L550 380 C580 380, 600 360, 600 330 L580 220 C580 180, 550 150, 500 150 L300 150 C250 150, 220 180, 220 220 L200 330 C200 360, 220 380, 250 380 Z" fill="#D97706" opacity="0.85"/>
+        <path d="M280 220 L520 220 C540 220, 550 230, 550 250 L540 330 L260 330 L250 250 C250 230, 260 220, 280 220 Z" fill="#F59E0B" opacity="0.9"/>
+        <!-- Dettaglio Capitonnè / Cuscino -->
+        <circle cx="340" cy="250" r="4" fill="#78350F"/>
+        <circle cx="400" cy="250" r="4" fill="#78350F"/>
+        <circle cx="460" cy="250" r="4" fill="#78350F"/>
+        <circle cx="370" cy="280" r="4" fill="#78350F"/>
+        <circle cx="430" cy="280" r="4" fill="#78350F"/>
+        <!-- Testo -->
+        <text x="50%" y="22%" dominant-baseline="middle" text-anchor="middle" fill="#FFFFFF" font-family="sans-serif" font-size="30" font-weight="bold">RIVESTIMENTO DIVANI & POLTRONE</text>
+        <text x="50%" y="90%" dominant-baseline="middle" text-anchor="middle" fill="#FBBF24" font-family="sans-serif" font-size="18" font-weight="600">Restauro Artigianale • Tessuti Antimacchia • Preventivo Foto</text>
+      </svg>
     </div>
 
     <!-- Form Lead -->
     <div class="form-card">
-      <h3>Richiedi Preventivo / Sopralluogo</h3>
+      <h3>Richiedi Preventivo Rivestimento</h3>
       <form action="https://formspree.io/f/TUO_ID_FORMSPREE" method="POST">
         <div class="form-group">
           <input type="text" name="nome" placeholder="Il tuo Nome" required>
@@ -86,41 +105,41 @@
           <input type="tel" name="telefono" placeholder="Numero di Telefono" required>
         </div>
         <div class="form-group">
-          <select name="servizio" required>
-            <option value="" disabled selected>Cosa desideri realizzare?</option>
-            <option value="Divani/Poltrone">Rivestimento Divano / Poltrona</option>
-            <option value="Tendaggi">Tendaggi e Tende da Interno</option>
-            <option value="Sedie/Letti">Testate Letto / Sedie</option>
-            <option value="Altro">Altra lavorazione sartoriale</option>
+          <select name="tipologia" required>
+            <option value="" disabled selected>Cosa desideri rifoderare?</option>
+            <option value="Divano">Divano (2, 3 o più posti / angolare)</option>
+            <option value="Poltrona">Poltrona o Pouf</option>
+            <option value="Sedie">Sedie da pranzo / ufficio</option>
+            <option value="Testata Letto">Testata letto o Imbottito</option>
           </select>
         </div>
-        <button type="submit" class="btn-submit">Invia la Richiesta</button>
+        <button type="submit" class="btn-submit">Richiedi Stima / Invia Foto</button>
       </form>
     </div>
   </section>
 
   <!-- Features -->
   <section class="features">
-    <h2>La tradizione sartoriale della Tappezzeria Piattelli</h2>
+    <h2>Perché scegliere la Tappezzeria Piattelli</h2>
     <div class="features-grid">
       <div class="feature-item">
-        <h4>Restauro e Lavorazione Interna</h4>
-        <p>Ogni divano o poltrona viene lavorato a mano nei nostri laboratori di Roma da maestri tappezzieri.</p>
+        <h4>Preventivi Rapidi su Foto</h4>
+        <p>Inviaci una foto del tuo divano o poltrona su WhatsApp per ricevere una stima indicativa.</p>
       </div>
       <div class="feature-item">
-        <h4>Ampio Catalogo Tessuti</h4>
-        <p>Vasta scelta di tessuti antimacchia, pelli, velluti e filati d'arredo delle migliori tessiture.</p>
+        <h4>Vasta Scelta di Tessuti</h4>
+        <p>Tessuti idrorepellenti, lavabili, antimacchia, pelli ed ecopelli ad altissima resistenza.</p>
       </div>
       <div class="feature-item">
         <h4>Ritiro e Consegna a Domicilio</h4>
-        <p>Ci occupiamo del trasporto e del montaggio direttamente a casa tua in tutta Roma e provincia.</p>
+        <p>Ci occupiamo del ritiro del mobile a casa tua a Roma e della riconsegna a lavoro finito.</p>
       </div>
     </div>
   </section>
 
-  <!-- Tasto WhatsApp Fluttuante (Con tracciamento) -->
-  <a href="https://wa.me/393XXXXXXXXX?text=Salve,%20ho%20visto%20la%20pagina%20Tappezzeria%20e%20vorrei%20un%20preventivo%20invianovi%20una%20foto." class="whatsapp-btn" target="_blank">
-    💬 Invia Foto su WhatsApp
+  <!-- Tasto WhatsApp Fluttuante -->
+  <a href="https://wa.me/393737502033?text=Salve,%20ho%20visto%20il%20sito%20Tappezzeria%20e%20vorrei%20un%20preventivo%20per%20rifoderare%20un%20mobile." class="whatsapp-btn" target="_blank">
+    💬 Chiedi Info su WhatsApp
   </a>
 
 </body>
