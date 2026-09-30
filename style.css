@@ -44,8 +44,14 @@ body {
 .section-heading {
   font-size: 1.8rem;
   color: var(--burgundy-primary);
-  margin-bottom: 25px;
+  margin-bottom: 8px;
   font-weight: 700;
+}
+
+.section-sub {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 25px;
 }
 
 /* HEADER */
@@ -248,33 +254,40 @@ body {
   text-align: center;
 }
 
-/* RECENSIONI */
+/* RECENSIONI GRID 3 COLONNE DESKTOP */
 .reviews-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
 .review-box {
   background: #ffffff;
-  padding: 20px;
+  padding: 22px;
   border-radius: 8px;
   border: 1px solid var(--border-color);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .stars {
   color: #f1c40f;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
 }
 
 .review-box p {
   font-style: italic;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
+  font-size: 0.88rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+  line-height: 1.45;
 }
 
 .review-box span {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--burgundy-primary);
 }
 
@@ -378,7 +391,16 @@ body {
   .hero-container,
   .advantages-grid,
   .gallery-grid,
-  .locations-grid,
+  .locations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
   .reviews-grid {
     grid-template-columns: 1fr;
   }
