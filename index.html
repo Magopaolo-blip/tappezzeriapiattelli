@@ -11,8 +11,8 @@
   <meta property="og:site_name" content="Tappezzeria Piattelli">
   <meta property="og:title" content="Tappezzeria Piattelli - Restauro e Sartoria Tessile a Roma">
   <meta property="og:description" content="Restauro divani, poltrone, imbottiti e vasta scelta di tessuti d'arredo a Roma. Showroom Lungotevere Marzio 10 | Laboratorio Via Federico Tozzi 21.">
-  <meta property="og:url" content="https://magopaolo-blip.github.io/tappezzeriapiattelli/">
-  <meta property="og:image" content="https://magopaolo-blip.github.io/tappezzeriapiattelli/Prima-dopo.png">
+  <meta property="og:url" content="https://tappezzeria.piattelli.it/">
+  <meta property="og:image" content="https://tappezzeria.piattelli.it/Prima-dopo.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -31,7 +31,7 @@
         <img src="logo-tappezzeria.svg" alt="Tappezzeria Piattelli" class="logo-img">
       </div>
       <div class="header-contact">
-        <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20informazioni%20per%20il%20restauro%20o%20rivestimento%20di%20un%20imbottito." target="_blank" class="phone-link">
+        <a href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20informazioni%20per%20il%20restauro%20o%20rivestimento%20di%20un%20imbottito.%0A%0AContatto%20da%20tappezzeria.piattelli.it" target="_blank" class="phone-link">
           💬 373 750 2033
         </a>
       </div>
@@ -49,10 +49,10 @@
         
         <div class="category-buttons-title">Cosa desideri realizzare?</div>
         <div class="category-buttons">
-          <a href="#contatti" class="btn btn-category">Restauro Divani & Poltrone</a>
-          <a href="#contatti" class="btn btn-category">Testate Letto Imbottite</a>
-          <a href="#contatti" class="btn btn-category">Confezione Tendaggi</a>
-          <a href="#contatti" class="btn btn-category">Fodere & Cuscineria</a>
+          <a href="#contatti" class="btn btn-category" data-tipologia="Restauro / Rivestimento Divano">Restauro Divani & Poltrone</a>
+          <a href="#contatti" class="btn btn-category" data-tipologia="Testata Letto su Misura">Testate Letto Imbottite</a>
+          <a href="#contatti" class="btn btn-category" data-tipologia="Tendaggi e Fodere">Confezione Tendaggi</a>
+          <a href="#contatti" class="btn btn-category" data-tipologia="Altro / Consulenza Tessuti">Fodere & Cuscineria</a>
         </div>
 
         <div class="hero-banner-card">
@@ -88,7 +88,7 @@
             <div class="form-group">
               <textarea id="formMessaggio" rows="3" placeholder="Descrivi il mobile da restaurare (marca, dimensioni, stato attuale)..."></textarea>
             </div>
-            <button type="submit" class="btn btn-gold btn-block">Invia Foto su WhatsApp per Stima</button>
+            <button type="submit" class="btn btn-burgundy btn-block">Richiedi una Stima su WhatsApp</button>
           </form>
         </div>
       </div>
@@ -113,6 +113,17 @@
           <h4>Ritiro e Consegna a Domicilio</h4>
           <p>Ci occupiamo del ritiro del mobile direttamente a casa tua in tutta Roma e della riconsegna a lavoro finito.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORIA PIATTELLI -->
+  <section class="section story-section">
+    <div class="container">
+      <div class="story-card">
+        <div class="story-kicker">UNA STORIA DI FAMIGLIA</div>
+        <h2>Tradizione tessile, lavoro artigianale</h2>
+        <p>Cesare Piattelli è cresciuto tra stoffe, campionari e lavorazioni, continuando la tradizione del padre, mercante di tessuti. Oggi Piattelli unisce questa esperienza a due sedi a Roma, con showroom, laboratorio artigianale e clienti in Italia e all’estero.</p>
       </div>
     </div>
   </section>
@@ -174,7 +185,7 @@
         
         <!-- SHOWROOM LUNGOTEVERE MARZIO 10 -->
         <div class="location-box highlight">
-          <img src="sede-lungotevere.png" alt="Showroom Piattelli Lungotevere Marzio" class="location-img" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <img src="sede-lungotevere.png" alt="Showroom Piattelli Lungotevere Marzio" class="location-img">
           <span class="loc-badge">Showroom & Rappresentanza</span>
           <h3>Lungotevere Marzio, 10</h3>
           <p class="loc-sub">📍 Roma (Zona Prati / Centro)</p>
@@ -188,7 +199,7 @@
 
         <!-- LABORATORIO VIA FEDERICO TOZZI 21 -->
         <div class="location-box">
-          <img src="sede-viatozzi.png" alt="Laboratorio Piattelli Via Federico Tozzi" class="location-img" style="width: 100%; height: 220px; object-fit: cover; border-radius: 8px; margin-bottom: 15px;">
+          <img src="sede-viatozzi.png" alt="Laboratorio Piattelli Via Federico Tozzi" class="location-img">
           <span class="loc-badge dark">Laboratorio Artigianale & Confezione</span>
           <h3>Via Federico Tozzi, 21</h3>
           <p class="loc-sub">📍 Roma</p>
@@ -214,28 +225,48 @@
   </footer>
 
   <!-- BOTTONE WHATSAPP FLUTTUANTE -->
-  <a href="https://wa.me/393737502033?text=Buongiorno,%20vorrei%20informazioni%20per%20il%20restauro%20o%20rivestimento%20di%20un%20imbottito." class="whatsapp-sticky" target="_blank">
+  <a href="https://wa.me/393737502033?text=DILLO%20A%20PIATTELLI%0A%0ABuongiorno%2C%20vorrei%20informazioni%20per%20il%20restauro%20o%20rivestimento%20di%20un%20imbottito.%0A%0AContatto%20da%20tappezzeria.piattelli.it" class="whatsapp-sticky" target="_blank">
     💬 Chatta con noi su WhatsApp
   </a>
 
   <!-- SCRIPT PER INVIO FORM SU WHATSAPP -->
   <script>
-    document.getElementById('whatsappForm').addEventListener('submit', function(e) {
+    const form = document.getElementById('whatsappForm');
+    const tipologiaSelect = document.getElementById('formTipologia');
+
+    document.querySelectorAll('.btn-category[data-tipologia]').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        tipologiaSelect.value = this.dataset.tipologia;
+      });
+    });
+
+    form.addEventListener('submit', function(e) {
       e.preventDefault();
-      
-      const nome = document.getElementById('formNome').value;
-      const telefono = document.getElementById('formTelefono').value;
-      const tipologia = document.getElementById('formTipologia').value;
-      const messaggio = document.getElementById('formMessaggio').value;
-      
-      let testoWA = `*Nuova richiesta da Sito Tappezzeria*\n\n`;
-      testoWA += `👤 *Nome:* ${nome}\n`;
-      testoWA += `📞 *Telefono:* ${telefono}\n`;
-      testoWA += `🏷 *Intervento:* ${tipologia}\n`;
+
+      const nome = document.getElementById('formNome').value.trim();
+      const telefono = document.getElementById('formTelefono').value.trim();
+      const tipologia = tipologiaSelect.value;
+      const messaggio = document.getElementById('formMessaggio').value.trim();
+
+      let testoWA = `DILLO A PIATTELLI
+
+`;
+      testoWA += `Buongiorno, vorrei richiedere una stima per un intervento di tappezzeria.
+
+`;
+      testoWA += `Nome: ${nome}
+`;
+      testoWA += `Telefono: ${telefono}
+`;
+      testoWA += `Intervento: ${tipologia}
+`;
       if (messaggio) {
-        testoWA += `📝 *Dettagli:* ${messaggio}`;
+        testoWA += `Dettagli: ${messaggio}
+`;
       }
-      
+      testoWA += `
+Contatto da tappezzeria.piattelli.it`;
+
       const url = `https://wa.me/393737502033?text=${encodeURIComponent(testoWA)}`;
       window.open(url, '_blank');
     });
